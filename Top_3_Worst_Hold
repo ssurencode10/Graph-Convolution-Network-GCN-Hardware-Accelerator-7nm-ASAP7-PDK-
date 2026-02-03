@@ -1,0 +1,129 @@
+Path 1: MET Hold Check with Pin tb0/sp0_memory_reg_29__0_/CLK 
+Endpoint:   tb0/sp0_memory_reg_29__0_/D (v) checked with  leading edge of 'clk'
+Beginpoint: data_in[330]                (v) triggered by  leading edge of 'clk'
+Path Groups: {clk}
+Analysis View: default_hold_view
+Other End Arrival Time          8.884
++ Hold                         16.402
++ Phase Shift                   0.000
+= Required Time                25.296
+  Arrival Time                 25.300
+  Slack Time                    0.004
+     Clock Rise Edge                      0.000
+     + Input Delay                        0.100
+     + Drive Adjustment                   4.600
+     = Beginpoint Arrival Time            4.700
+     Timing Path:
+     +-------------------------------------------------------------------------------------------------------------+ 
+     |             Pin             | Edge |      Net       |           Cell           | Delay | Arrival | Required | 
+     |                             |      |                |                          |       |  Time   |   Time   | 
+     |-----------------------------+------+----------------+--------------------------+-------+---------+----------| 
+     | data_in[330]                |  v   | data_in_29__0_ |                          |       |   4.700 |    4.696 | 
+     | tb0/U1207/B                 |  v   | data_in_29__0_ | NAND2xp33_ASAP7_75t_R    | 2.100 |   6.800 |    6.796 | 
+     | tb0/U1207/Y                 |  ^   | tb0/n341       | NAND2xp33_ASAP7_75t_R    | 9.500 |  16.300 |   16.296 | 
+     | tb0/U1208/B                 |  ^   | tb0/n341       | OAI21xp33_ASAP7_75t_R    | 0.000 |  16.300 |   16.296 | 
+     | tb0/U1208/Y                 |  v   | tb0/n2758      | OAI21xp33_ASAP7_75t_R    | 9.000 |  25.300 |   25.296 | 
+     | tb0/sp0_memory_reg_29__0_/D |  v   | tb0/n2758      | ASYNC_DFFHx1_ASAP7_75t_R | 0.000 |  25.300 |   25.296 | 
+     +-------------------------------------------------------------------------------------------------------------+ 
+     Clock Rise Edge                      0.000
+     + Drive Adjustment                   7.700
+     + Source Insertion Delay           -71.216
+     = Beginpoint Arrival Time          -63.516
+     Other End Path:
+     +----------------------------------------------------------------------------------------------------------------+ 
+     |               Pin                | Edge |     Net     |           Cell           |  Delay | Arrival | Required | 
+     |                                  |      |             |                          |        |  Time   |   Time   | 
+     |----------------------------------+------+-------------+--------------------------+--------+---------+----------| 
+     | clk                              |  ^   | clk         |                          |        | -63.516 |  -63.512 | 
+     | CTS_ccl_a_BUF_clk_G0_L1_4/A      |  ^   | clk         | BUFx12f_ASAP7_75t_R      | 11.200 | -52.316 |  -52.312 | 
+     | CTS_ccl_a_BUF_clk_G0_L1_4/Y      |  ^   | CTS_112     | BUFx12f_ASAP7_75t_R      | 23.400 | -28.916 |  -28.912 | 
+     | tb0/CTS_ccl_a_BUF_clk_G0_L2_48/A |  ^   | CTS_112     | BUFx2_ASAP7_75t_R        |  2.500 | -26.416 |  -26.412 | 
+     | tb0/CTS_ccl_a_BUF_clk_G0_L2_48/Y |  ^   | tb0/CTS_167 | BUFx2_ASAP7_75t_R        | 30.100 |   3.684 |    3.688 | 
+     | tb0/sp0_memory_reg_29__0_/CLK    |  ^   | tb0/CTS_167 | ASYNC_DFFHx1_ASAP7_75t_R |  5.200 |   8.884 |    8.888 | 
+     +----------------------------------------------------------------------------------------------------------------+ 
+Path 2: MET Hold Check with Pin tb0/sp0_memory_reg_38__2_/CLK 
+Endpoint:   tb0/sp0_memory_reg_38__2_/D (v) checked with  leading edge of 'clk'
+Beginpoint: data_in[287]                (v) triggered by  leading edge of 'clk'
+Path Groups: {clk}
+Analysis View: default_hold_view
+Other End Arrival Time         12.984
++ Hold                          6.794
++ Phase Shift                   0.000
+= Required Time                19.787
+  Arrival Time                 19.800
+  Slack Time                    0.013
+     Clock Rise Edge                      0.000
+     + Input Delay                        0.100
+     + Drive Adjustment                   3.100
+     = Beginpoint Arrival Time            3.200
+     Timing Path:
+     +-------------------------------------------------------------------------------------------------------------+ 
+     |             Pin             | Edge |      Net       |           Cell           | Delay | Arrival | Required | 
+     |                             |      |                |                          |       |  Time   |   Time   | 
+     |-----------------------------+------+----------------+--------------------------+-------+---------+----------| 
+     | data_in[287]                |  v   | data_in_38__2_ |                          |       |   3.200 |    3.187 | 
+     | tb0/U1447/B                 |  v   | data_in_38__2_ | NAND2xp33_ASAP7_75t_R    | 0.200 |   3.400 |    3.387 | 
+     | tb0/U1447/Y                 |  ^   | tb0/n479       | NAND2xp33_ASAP7_75t_R    | 7.400 |  10.800 |   10.787 | 
+     | tb0/U1448/B                 |  ^   | tb0/n479       | OAI21xp33_ASAP7_75t_R    | 0.000 |  10.800 |   10.787 | 
+     | tb0/U1448/Y                 |  v   | tb0/n2887      | OAI21xp33_ASAP7_75t_R    | 9.000 |  19.800 |   19.787 | 
+     | tb0/sp0_memory_reg_38__2_/D |  v   | tb0/n2887      | ASYNC_DFFHx1_ASAP7_75t_R | 0.000 |  19.800 |   19.787 | 
+     +-------------------------------------------------------------------------------------------------------------+ 
+     Clock Rise Edge                      0.000
+     + Drive Adjustment                   7.700
+     + Source Insertion Delay           -71.216
+     = Beginpoint Arrival Time          -63.516
+     Other End Path:
+     +----------------------------------------------------------------------------------------------------------------+ 
+     |               Pin                | Edge |     Net     |           Cell           |  Delay | Arrival | Required | 
+     |                                  |      |             |                          |        |  Time   |   Time   | 
+     |----------------------------------+------+-------------+--------------------------+--------+---------+----------| 
+     | clk                              |  ^   | clk         |                          |        | -63.516 |  -63.504 | 
+     | tb0/CTS_ccl_a_BUF_clk_G0_L1_5/A  |  ^   | clk         | BUFx12f_ASAP7_75t_R      | 17.800 | -45.716 |  -45.704 | 
+     | tb0/CTS_ccl_a_BUF_clk_G0_L1_5/Y  |  ^   | tb0/CTS_183 | BUFx12f_ASAP7_75t_R      | 23.300 | -22.416 |  -22.404 | 
+     | tb0/CTS_ccl_a_BUF_clk_G0_L2_67/A |  ^   | tb0/CTS_183 | BUFx12f_ASAP7_75t_R      | 13.800 |  -8.616 |   -8.604 | 
+     | tb0/CTS_ccl_a_BUF_clk_G0_L2_67/Y |  ^   | tb0/CTS_181 | BUFx12f_ASAP7_75t_R      | 21.200 |  12.584 |   12.596 | 
+     | tb0/sp0_memory_reg_38__2_/CLK    |  ^   | tb0/CTS_181 | ASYNC_DFFHx1_ASAP7_75t_R |  0.400 |  12.984 |   12.996 | 
+     +----------------------------------------------------------------------------------------------------------------+ 
+Path 3: MET Hold Check with Pin tb0/sp0_memory_reg_66__0_/CLK 
+Endpoint:   tb0/sp0_memory_reg_66__0_/D (v) checked with  leading edge of 'clk'
+Beginpoint: data_in[145]                (v) triggered by  leading edge of 'clk'
+Path Groups: {clk}
+Analysis View: default_hold_view
+Other End Arrival Time         11.084
++ Hold                          8.179
++ Phase Shift                   0.000
+= Required Time                19.272
+  Arrival Time                 19.300
+  Slack Time                    0.028
+     Clock Rise Edge                      0.000
+     + Input Delay                        0.100
+     + Drive Adjustment                   2.300
+     = Beginpoint Arrival Time            2.400
+     Timing Path:
+     +-------------------------------------------------------------------------------------------------------------+ 
+     |             Pin             | Edge |      Net       |           Cell           | Delay | Arrival | Required | 
+     |                             |      |                |                          |       |  Time   |   Time   | 
+     |-----------------------------+------+----------------+--------------------------+-------+---------+----------| 
+     | data_in[145]                |  v   | data_in_66__0_ |                          |       |   2.400 |    2.372 | 
+     | tb0/U1239/B                 |  v   | data_in_66__0_ | NAND2xp33_ASAP7_75t_R    | 0.000 |   2.400 |    2.372 | 
+     | tb0/U1239/Y                 |  ^   | tb0/n359       | NAND2xp33_ASAP7_75t_R    | 7.800 |  10.200 |   10.172 | 
+     | tb0/U1240/B                 |  ^   | tb0/n359       | OAI21xp33_ASAP7_75t_R    | 0.000 |  10.200 |   10.172 | 
+     | tb0/U1240/Y                 |  v   | tb0/n2119      | OAI21xp33_ASAP7_75t_R    | 9.100 |  19.300 |   19.272 | 
+     | tb0/sp0_memory_reg_66__0_/D |  v   | tb0/n2119      | ASYNC_DFFHx1_ASAP7_75t_R | 0.000 |  19.300 |   19.272 | 
+     +-------------------------------------------------------------------------------------------------------------+ 
+     Clock Rise Edge                      0.000
+     + Drive Adjustment                   7.700
+     + Source Insertion Delay           -71.216
+     = Beginpoint Arrival Time          -63.516
+     Other End Path:
+     +----------------------------------------------------------------------------------------------------------------+ 
+     |               Pin                | Edge |     Net     |           Cell           |  Delay | Arrival | Required | 
+     |                                  |      |             |                          |        |  Time   |   Time   | 
+     |----------------------------------+------+-------------+--------------------------+--------+---------+----------| 
+     | clk                              |  ^   | clk         |                          |        | -63.516 |  -63.489 | 
+     | tb0/CTS_ccl_a_BUF_clk_G0_L1_5/A  |  ^   | clk         | BUFx12f_ASAP7_75t_R      | 17.800 | -45.716 |  -45.689 | 
+     | tb0/CTS_ccl_a_BUF_clk_G0_L1_5/Y  |  ^   | tb0/CTS_183 | BUFx12f_ASAP7_75t_R      | 23.300 | -22.416 |  -22.389 | 
+     | tb0/CTS_ccl_a_BUF_clk_G0_L2_61/A |  ^   | tb0/CTS_183 | BUFx12f_ASAP7_75t_R      | 10.600 | -11.816 |  -11.789 | 
+     | tb0/CTS_ccl_a_BUF_clk_G0_L2_61/Y |  ^   | tb0/CTS_175 | BUFx12f_ASAP7_75t_R      | 22.200 |  10.384 |   10.411 | 
+     | tb0/sp0_memory_reg_66__0_/CLK    |  ^   | tb0/CTS_175 | ASYNC_DFFHx1_ASAP7_75t_R |  0.700 |  11.084 |   11.111 | 
+     +----------------------------------------------------------------------------------------------------------------+

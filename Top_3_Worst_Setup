@@ -1,0 +1,417 @@
+Path 1: MET Setup Check with Pin tb0/mfwm0_mem_reg_5__2__15_/CLK 
+Endpoint:   tb0/mfwm0_mem_reg_5__2__15_/D (v) checked with  leading edge of 
+'clk'
+Beginpoint: tb0/sp0_memory_reg_85__2_/QN  (^) triggered by  leading edge of 
+'clk'
+Path Groups: {reg2reg}
+Analysis View: default_setup_view
+Other End Arrival Time         68.100
+- Setup                         4.999
++ Phase Shift                 900.000
+= Required Time               963.091
+- Arrival Time                920.644
+= Slack Time                   42.447
+     Clock Rise Edge                      0.000
+     + Drive Adjustment                   7.700
+     + Source Insertion Delay           -77.356
+     = Beginpoint Arrival Time          -69.656
+     Timing Path:
+     +---------------------------------------------------------------------------------------------------------------------------------------------------------------------+ 
+     |                        Pin                        | Edge |                       Net                       |           Cell           |  Delay | Arrival | Required | 
+     |                                                   |      |                                                 |                          |        |  Time   |   Time   | 
+     |---------------------------------------------------+------+-------------------------------------------------+--------------------------+--------+---------+----------| 
+     | clk                                               |  ^   | clk                                             |                          |        | -69.656 |  -27.209 | 
+     | tb0/CTS_ccl_a_BUF_clk_G0_L1_3/A                   |  ^   | clk                                             | BUFx12f_ASAP7_75t_R      | 16.800 | -52.856 |  -10.409 | 
+     | tb0/CTS_ccl_a_BUF_clk_G0_L1_3/Y                   |  ^   | tb0/CTS_166                                     | BUFx12f_ASAP7_75t_R      | 23.500 | -29.356 |   13.091 | 
+     | tb0/CTS_ccl_a_BUF_clk_G0_L2_38/A                  |  ^   | tb0/CTS_166                                     | BUFx2_ASAP7_75t_R        |  5.500 | -23.856 |   18.591 | 
+     | tb0/CTS_ccl_a_BUF_clk_G0_L2_38/Y                  |  ^   | tb0/CTS_161                                     | BUFx2_ASAP7_75t_R        | 32.300 |   8.444 |   50.891 | 
+     | tb0/sp0_memory_reg_85__2_/CLK                     |  ^   | tb0/CTS_161                                     | ASYNC_DFFHx1_ASAP7_75t_R |  5.200 |  13.644 |   56.091 | 
+     | tb0/sp0_memory_reg_85__2_/QN                      |  ^   | tb0/n1859                                       | ASYNC_DFFHx1_ASAP7_75t_R | 57.100 |  70.744 |  113.191 | 
+     | tb0/vdp0/U3235/A                                  |  ^   | tb0/n1859                                       | NOR2xp33_ASAP7_75t_R     |  0.100 |  70.844 |  113.291 | 
+     | tb0/vdp0/U3235/Y                                  |  v   | tb0/vdp0/DP_OP_478J3_122_4945_n4992             | NOR2xp33_ASAP7_75t_R     | 25.900 |  96.744 |  139.191 | 
+     | tb0/vdp0/DP_OP_478J3_122_4945_U2221/A             |  v   | tb0/vdp0/DP_OP_478J3_122_4945_n4992             | FAx1_ASAP7_75t_R         |  0.100 |  96.844 |  139.291 | 
+     | tb0/vdp0/DP_OP_478J3_122_4945_U2221/CON           |  ^   | tb0/vdp0/DP_OP_478J3_122_4945_n4388             | FAx1_ASAP7_75t_R         | 25.700 | 122.544 |  164.991 | 
+     | tb0/vdp0/FE_RC_2159_0/A                           |  ^   | tb0/vdp0/DP_OP_478J3_122_4945_n4388             | NAND2xp33_ASAP7_75t_R    |  0.200 | 122.744 |  165.191 | 
+     | tb0/vdp0/FE_RC_2159_0/Y                           |  v   | tb0/vdp0/FE_RN_1820_0                           | NAND2xp33_ASAP7_75t_R    | 17.800 | 140.544 |  182.991 | 
+     | tb0/vdp0/FE_RC_2148_0/B                           |  v   | tb0/vdp0/FE_RN_1820_0                           | NAND2xp33_ASAP7_75t_R    |  0.000 | 140.544 |  182.991 | 
+     | tb0/vdp0/FE_RC_2148_0/Y                           |  ^   | tb0/vdp0/FE_RN_1830_0                           | NAND2xp33_ASAP7_75t_R    | 18.000 | 158.544 |  200.991 | 
+     | tb0/vdp0/FE_RC_2147_0/B                           |  ^   | tb0/vdp0/FE_RN_1830_0                           | NAND2x1_ASAP7_75t_R      |  0.000 | 158.544 |  200.991 | 
+     | tb0/vdp0/FE_RC_2147_0/Y                           |  v   | tb0/vdp0/DP_OP_478J3_122_4945_n3742             | NAND2x1_ASAP7_75t_R      | 19.100 | 177.644 |  220.091 | 
+     | tb0/vdp0/DP_OP_478J3_122_4945_U1494/A             |  v   | tb0/vdp0/DP_OP_478J3_122_4945_n3742             | FAx1_ASAP7_75t_R         |  3.700 | 181.344 |  223.791 | 
+     | tb0/vdp0/DP_OP_478J3_122_4945_U1494/SN            |  v   | tb0/vdp0/DP_OP_478J3_122_4945_n2939             | FAx1_ASAP7_75t_R         | 58.100 | 239.444 |  281.891 | 
+     | tb0/vdp0/DP_OP_478J3_122_4945_U1443/B             |  v   | tb0/vdp0/DP_OP_478J3_122_4945_n2939             | FAx1_ASAP7_75t_R         |  0.300 | 239.744 |  282.191 | 
+     | tb0/vdp0/DP_OP_478J3_122_4945_U1443/SN            |  v   | tb0/vdp0/DP_OP_478J3_122_4945_n2837             | FAx1_ASAP7_75t_R         | 71.800 | 311.544 |  353.991 | 
+     | tb0/vdp0/DP_OP_478J3_122_4945_U1404/A             |  v   | tb0/vdp0/DP_OP_478J3_122_4945_n2837             | FAx1_ASAP7_75t_R         |  0.900 | 312.444 |  354.891 | 
+     | tb0/vdp0/DP_OP_478J3_122_4945_U1404/CON           |  ^   | tb0/vdp0/DP_OP_478J3_122_4945_n2758             | FAx1_ASAP7_75t_R         | 26.700 | 339.144 |  381.591 | 
+     | tb0/vdp0/DP_OP_478J3_122_4945_U1404/SN            |  v   | tb0/vdp0/DP_OP_478J3_122_4945_n2759             | FAx1_ASAP7_75t_R         | 13.500 | 352.644 |  395.091 | 
+     | tb0/vdp0/FE_RC_5680_0/A                           |  v   | tb0/vdp0/DP_OP_478J3_122_4945_n2759             | INVxp33_ASAP7_75t_R      |  0.000 | 352.644 |  395.091 | 
+     | tb0/vdp0/FE_RC_5680_0/Y                           |  ^   | tb0/vdp0/FE_RN_4786_0                           | INVxp33_ASAP7_75t_R      | 22.600 | 375.244 |  417.691 | 
+     | tb0/vdp0/FE_RC_5679_0/A                           |  ^   | tb0/vdp0/FE_RN_4786_0                           | NAND2xp5_ASAP7_75t_R     |  0.100 | 375.344 |  417.791 | 
+     | tb0/vdp0/FE_RC_5679_0/Y                           |  v   | tb0/vdp0/FE_RN_4787_0                           | NAND2xp5_ASAP7_75t_R     |  9.700 | 385.044 |  427.491 | 
+     | tb0/vdp0/FE_RC_5678_0/B                           |  v   | tb0/vdp0/FE_RN_4787_0                           | NAND2xp5_ASAP7_75t_R     |  0.000 | 385.044 |  427.491 | 
+     | tb0/vdp0/FE_RC_5678_0/Y                           |  ^   | tb0/vdp0/DP_OP_478J3_122_4945_n2726             | NAND2xp5_ASAP7_75t_R     | 11.000 | 396.044 |  438.491 | 
+     | tb0/vdp0/FE_RC_139_0/A                            |  ^   | tb0/vdp0/DP_OP_478J3_122_4945_n2726             | INVxp33_ASAP7_75t_R      |  0.000 | 396.044 |  438.491 | 
+     | tb0/vdp0/FE_RC_139_0/Y                            |  v   | tb0/vdp0/FE_RN_104_0                            | INVxp33_ASAP7_75t_R      | 18.500 | 414.544 |  456.991 | 
+     | tb0/vdp0/FE_RC_138_0/A                            |  v   | tb0/vdp0/FE_RN_104_0                            | NAND2xp5_ASAP7_75t_R     |  0.100 | 414.644 |  457.091 | 
+     | tb0/vdp0/FE_RC_138_0/Y                            |  ^   | tb0/vdp0/FE_RN_105_0                            | NAND2xp5_ASAP7_75t_R     | 16.900 | 431.544 |  473.991 | 
+     | tb0/vdp0/FE_RC_137_0/B                            |  ^   | tb0/vdp0/FE_RN_105_0                            | OAI21x1_ASAP7_75t_R      |  0.100 | 431.644 |  474.091 | 
+     | tb0/vdp0/FE_RC_137_0/Y                            |  v   | tb0/vdp0/DP_OP_478J3_122_4945_n1957             | OAI21x1_ASAP7_75t_R      | 17.700 | 449.344 |  491.791 | 
+     | tb0/vdp0/DP_OP_478J3_122_4945_U665/A              |  v   | tb0/vdp0/DP_OP_478J3_122_4945_n1957             | FAx1_ASAP7_75t_R         |  1.800 | 451.144 |  493.591 | 
+     | tb0/vdp0/DP_OP_478J3_122_4945_U665/CON            |  ^   | tb0/vdp0/DP_OP_478J3_122_4945_n1282             | FAx1_ASAP7_75t_R         | 29.600 | 480.744 |  523.191 | 
+     | tb0/vdp0/FE_OCPC1567_DP_OP_478J3_122_4945_n1282/A |  ^   | tb0/vdp0/DP_OP_478J3_122_4945_n1282             | HB1xp67_ASAP7_75t_R      |  0.200 | 480.944 |  523.391 | 
+     | tb0/vdp0/FE_OCPC1567_DP_OP_478J3_122_4945_n1282/Y |  ^   | tb0/vdp0/FE_OCPN1567_DP_OP_478J3_122_4945_n1282 | HB1xp67_ASAP7_75t_R      | 19.200 | 500.144 |  542.591 | 
+     | tb0/vdp0/FE_RC_5889_0/A                           |  ^   | tb0/vdp0/FE_OCPN1567_DP_OP_478J3_122_4945_n1282 | INVxp33_ASAP7_75t_R      |  0.000 | 500.144 |  542.591 | 
+     | tb0/vdp0/FE_RC_5889_0/Y                           |  v   | tb0/vdp0/FE_RN_4966_0                           | INVxp33_ASAP7_75t_R      |  8.200 | 508.344 |  550.791 | 
+     | tb0/vdp0/FE_RC_5888_0/A1                          |  v   | tb0/vdp0/FE_RN_4966_0                           | OAI21xp5_ASAP7_75t_R     |  0.000 | 508.344 |  550.791 | 
+     | tb0/vdp0/FE_RC_5888_0/Y                           |  ^   | tb0/vdp0/FE_RN_4967_0                           | OAI21xp5_ASAP7_75t_R     |  8.300 | 516.644 |  559.091 | 
+     | tb0/vdp0/FE_RC_5887_0/A                           |  ^   | tb0/vdp0/FE_RN_4967_0                           | INVxp33_ASAP7_75t_R      |  0.000 | 516.644 |  559.091 | 
+     | tb0/vdp0/FE_RC_5887_0/Y                           |  v   | tb0/vdp0/FE_RN_4968_0                           | INVxp33_ASAP7_75t_R      |  8.700 | 525.344 |  567.791 | 
+     | tb0/vdp0/FE_RC_5886_0/B                           |  v   | tb0/vdp0/FE_RN_4968_0                           | NAND2xp5_ASAP7_75t_R     |  0.000 | 525.344 |  567.791 | 
+     | tb0/vdp0/FE_RC_5886_0/Y                           |  ^   | tb0/vdp0/FE_RN_4969_0                           | NAND2xp5_ASAP7_75t_R     | 10.900 | 536.244 |  578.691 | 
+     | tb0/vdp0/FE_RC_5881_0/B                           |  ^   | tb0/vdp0/FE_RN_4969_0                           | OAI21x1_ASAP7_75t_R      |  0.100 | 536.344 |  578.791 | 
+     | tb0/vdp0/FE_RC_5881_0/Y                           |  v   | tb0/vdp0/DP_OP_478J3_122_4945_n753              | OAI21x1_ASAP7_75t_R      | 13.600 | 549.944 |  592.391 | 
+     | tb0/vdp0/FE_RC_5327_0/A                           |  v   | tb0/vdp0/DP_OP_478J3_122_4945_n753              | INVxp33_ASAP7_75t_R      |  0.100 | 550.044 |  592.491 | 
+     | tb0/vdp0/FE_RC_5327_0/Y                           |  ^   | tb0/vdp0/FE_RN_4493_0                           | INVxp33_ASAP7_75t_R      | 16.600 | 566.644 |  609.091 | 
+     | tb0/vdp0/FE_RC_5323_0/A                           |  ^   | tb0/vdp0/FE_RN_4493_0                           | NOR2xp33_ASAP7_75t_R     |  0.000 | 566.644 |  609.091 | 
+     | tb0/vdp0/FE_RC_5323_0/Y                           |  v   | tb0/vdp0/FE_RN_4496_0                           | NOR2xp33_ASAP7_75t_R     | 13.700 | 580.344 |  622.791 | 
+     | tb0/vdp0/FE_RC_5322_0/B                           |  v   | tb0/vdp0/FE_RN_4496_0                           | NAND2xp5_ASAP7_75t_R     |  0.000 | 580.344 |  622.791 | 
+     | tb0/vdp0/FE_RC_5322_0/Y                           |  ^   | tb0/vdp0/FE_RN_4497_0                           | NAND2xp5_ASAP7_75t_R     |  8.700 | 589.044 |  631.491 | 
+     | tb0/vdp0/FE_RC_5315_0/C                           |  ^   | tb0/vdp0/FE_RN_4497_0                           | OAI211xp5_ASAP7_75t_R    |  0.000 | 589.044 |  631.491 | 
+     | tb0/vdp0/FE_RC_5315_0/Y                           |  v   | tb0/vdp0/DP_OP_478J3_122_4945_n741              | OAI211xp5_ASAP7_75t_R    | 10.900 | 599.944 |  642.391 | 
+     | tb0/vdp0/FE_OCPC106_DP_OP_478J3_122_4945_n741/A   |  v   | tb0/vdp0/DP_OP_478J3_122_4945_n741              | BUFx2_ASAP7_75t_R        |  0.000 | 599.944 |  642.391 | 
+     | tb0/vdp0/FE_OCPC106_DP_OP_478J3_122_4945_n741/Y   |  v   | tb0/vdp0/FE_OCPN92_DP_OP_478J3_122_4945_n741    | BUFx2_ASAP7_75t_R        | 17.100 | 617.044 |  659.491 | 
+     | tb0/vdp0/FE_RC_5379_0/A                           |  v   | tb0/vdp0/FE_OCPN92_DP_OP_478J3_122_4945_n741    | NOR2x1_ASAP7_75t_R       |  0.100 | 617.144 |  659.591 | 
+     | tb0/vdp0/FE_RC_5379_0/Y                           |  ^   | tb0/vdp0/FE_RN_4546_0                           | NOR2x1_ASAP7_75t_R       | 10.600 | 627.744 |  670.191 | 
+     | tb0/vdp0/FE_RC_5386_0/A                           |  ^   | tb0/vdp0/FE_RN_4546_0                           | INVxp33_ASAP7_75t_R      |  0.100 | 627.844 |  670.291 | 
+     | tb0/vdp0/FE_RC_5386_0/Y                           |  v   | tb0/vdp0/FE_RN_4540_0                           | INVxp33_ASAP7_75t_R      | 10.800 | 638.644 |  681.091 | 
+     | tb0/vdp0/FE_RC_5384_0/A                           |  v   | tb0/vdp0/FE_RN_4540_0                           | NAND2xp5_ASAP7_75t_R     |  0.000 | 638.644 |  681.091 | 
+     | tb0/vdp0/FE_RC_5384_0/Y                           |  ^   | tb0/vdp0/FE_RN_4542_0                           | NAND2xp5_ASAP7_75t_R     |  8.500 | 647.144 |  689.591 | 
+     | tb0/vdp0/FE_RC_5753_0/A1                          |  ^   | tb0/vdp0/FE_RN_4542_0                           | OAI22xp33_ASAP7_75t_R    |  0.000 | 647.144 |  689.591 | 
+     | tb0/vdp0/FE_RC_5753_0/Y                           |  v   | tb0/vdp0/DP_OP_478J3_122_4945_n735              | OAI22xp33_ASAP7_75t_R    |  9.800 | 656.944 |  699.391 | 
+     | tb0/vdp0/U58/A                                    |  v   | tb0/vdp0/DP_OP_478J3_122_4945_n735              | INVxp33_ASAP7_75t_R      |  0.000 | 656.944 |  699.391 | 
+     | tb0/vdp0/U58/Y                                    |  ^   | tb0/vdp0/DP_OP_478J3_122_4945_n731              | INVxp33_ASAP7_75t_R      | 25.400 | 682.344 |  724.791 | 
+     | tb0/vdp0/FE_RC_5254_0/B                           |  ^   | tb0/vdp0/DP_OP_478J3_122_4945_n731              | NAND2xp5_ASAP7_75t_R     |  0.100 | 682.444 |  724.891 | 
+     | tb0/vdp0/FE_RC_5254_0/Y                           |  v   | tb0/vdp0/FE_RN_4450_0                           | NAND2xp5_ASAP7_75t_R     | 16.400 | 698.844 |  741.291 | 
+     | tb0/vdp0/FE_RC_5252_0/A2                          |  v   | tb0/vdp0/FE_RN_4450_0                           | AO21x2_ASAP7_75t_R       |  0.100 | 698.944 |  741.391 | 
+     | tb0/vdp0/FE_RC_5252_0/Y                           |  v   | tb0/vdp0/DP_OP_478J3_122_4945_n12               | AO21x2_ASAP7_75t_R       | 22.100 | 721.044 |  763.491 | 
+     | tb0/vdp0/DP_OP_478J3_122_4945_U16/A               |  v   | tb0/vdp0/DP_OP_478J3_122_4945_n12               | FAx1_ASAP7_75t_R         |  0.300 | 721.344 |  763.791 | 
+     | tb0/vdp0/DP_OP_478J3_122_4945_U16/CON             |  ^   | tb0/vdp0/DP_OP_478J3_122_4945_n11               | FAx1_ASAP7_75t_R         | 23.200 | 744.544 |  786.991 | 
+     | tb0/vdp0/DP_OP_478J3_122_4945_U15/A               |  ^   | tb0/vdp0/DP_OP_478J3_122_4945_n11               | FAx1_ASAP7_75t_R         |  0.100 | 744.644 |  787.091 | 
+     | tb0/vdp0/DP_OP_478J3_122_4945_U15/CON             |  v   | tb0/vdp0/DP_OP_478J3_122_4945_n10               | FAx1_ASAP7_75t_R         | 20.100 | 764.744 |  807.191 | 
+     | tb0/vdp0/FE_RC_6628_0/A2                          |  v   | tb0/vdp0/DP_OP_478J3_122_4945_n10               | OA21x2_ASAP7_75t_R       |  0.100 | 764.844 |  807.291 | 
+     | tb0/vdp0/FE_RC_6628_0/Y                           |  v   | tb0/vdp0/DP_OP_478J3_122_4945_n3                | OA21x2_ASAP7_75t_R       | 23.300 | 788.144 |  830.591 | 
+     | tb0/vdp0/FE_RC_69_0/A1                            |  v   | tb0/vdp0/DP_OP_478J3_122_4945_n3                | OAI21x1_ASAP7_75t_R      |  0.100 | 788.244 |  830.691 | 
+     | tb0/vdp0/FE_RC_69_0/Y                             |  ^   | tb0/vdp0/DP_OP_478J3_122_4945_n8                | OAI21x1_ASAP7_75t_R      | 12.400 | 800.644 |  843.091 | 
+     | tb0/vdp0/FE_RC_9_0/A                              |  ^   | tb0/vdp0/DP_OP_478J3_122_4945_n8                | NAND2x1p5_ASAP7_75t_R    |  0.100 | 800.744 |  843.191 | 
+     | tb0/vdp0/FE_RC_9_0/Y                              |  v   | tb0/vdp0/FE_RN_2_0                              | NAND2x1p5_ASAP7_75t_R    |  7.900 | 808.644 |  851.091 | 
+     | tb0/vdp0/FE_RC_8_0/B                              |  v   | tb0/vdp0/FE_RN_2_0                              | NAND2x1p5_ASAP7_75t_R    |  0.100 | 808.744 |  851.191 | 
+     | tb0/vdp0/FE_RC_8_0/Y                              |  ^   | tb0/vdp0/DP_OP_478J3_122_4945_n7                | NAND2x1p5_ASAP7_75t_R    | 10.500 | 819.244 |  861.691 | 
+     | tb0/vdp0/FE_RC_6626_0/A1                          |  ^   | tb0/vdp0/DP_OP_478J3_122_4945_n7                | OA21x2_ASAP7_75t_R       |  0.500 | 819.744 |  862.191 | 
+     | tb0/vdp0/FE_RC_6626_0/Y                           |  ^   | tb0/vdp0/DP_OP_478J3_122_4945_n21               | OA21x2_ASAP7_75t_R       | 18.700 | 838.444 |  880.891 | 
+     | tb0/vdp0/FE_RC_6902_0/A1                          |  ^   | tb0/vdp0/DP_OP_478J3_122_4945_n21               | OAI21xp5_ASAP7_75t_R     |  0.100 | 838.544 |  880.991 | 
+     | tb0/vdp0/FE_RC_6902_0/Y                           |  v   | tb0/vdp0/DP_OP_478J3_122_4945_n5                | OAI21xp5_ASAP7_75t_R     | 11.700 | 850.244 |  892.691 | 
+     | tb0/vdp0/FE_RC_43_0/A                             |  v   | tb0/vdp0/DP_OP_478J3_122_4945_n5                | NAND2xp5_ASAP7_75t_R     |  0.100 | 850.344 |  892.791 | 
+     | tb0/vdp0/FE_RC_43_0/Y                             |  ^   | tb0/vdp0/FE_RN_33_0                             | NAND2xp5_ASAP7_75t_R     | 10.500 | 860.844 |  903.291 | 
+     | tb0/vdp0/FE_RC_6624_0/B                           |  ^   | tb0/vdp0/FE_RN_33_0                             | OAI21xp5_ASAP7_75t_R     |  0.000 | 860.844 |  903.291 | 
+     | tb0/vdp0/FE_RC_6624_0/Y                           |  v   | tb0/fm_wm_value[15]                             | OAI21xp5_ASAP7_75t_R     | 15.800 | 876.644 |  919.091 | 
+     | tb0/FE_OCPC7_fm_wm_value_15/A                     |  v   | tb0/fm_wm_value[15]                             | BUFx6f_ASAP7_75t_R       |  0.100 | 876.744 |  919.191 | 
+     | tb0/FE_OCPC7_fm_wm_value_15/Y                     |  v   | tb0/FE_OCPN3_fm_wm_value_15                     | BUFx6f_ASAP7_75t_R       | 19.200 | 895.944 |  938.391 | 
+     | tb0/FE_RC_180_0/A                                 |  v   | tb0/FE_OCPN3_fm_wm_value_15                     | NAND3xp33_ASAP7_75t_R    |  1.700 | 897.644 |  940.091 | 
+     | tb0/FE_RC_180_0/Y                                 |  ^   | tb0/n1423                                       | NAND3xp33_ASAP7_75t_R    |  8.400 | 906.044 |  948.491 | 
+     | tb0/U2343/C                                       |  ^   | tb0/n1423                                       | A2O1A1Ixp33_ASAP7_75t_R  |  0.000 | 906.044 |  948.491 | 
+     | tb0/U2343/Y                                       |  v   | tb0/n3495                                       | A2O1A1Ixp33_ASAP7_75t_R  | 14.500 | 920.544 |  962.991 | 
+     | tb0/mfwm0_mem_reg_5__2__15_/D                     |  v   | tb0/n3495                                       | ASYNC_DFFHx1_ASAP7_75t_R |  0.100 | 920.644 |  963.091 | 
+     +---------------------------------------------------------------------------------------------------------------------------------------------------------------------+ 
+     Clock Rise Edge                      0.000
+     + Drive Adjustment                   7.100
+     = Beginpoint Arrival Time            7.100
+     Other End Path:
+     +---------------------------------------------------------------------------------------------------------------+ 
+     |               Pin               | Edge |     Net     |           Cell           |  Delay | Arrival | Required | 
+     |                                 |      |             |                          |        |  Time   |   Time   | 
+     |---------------------------------+------+-------------+--------------------------+--------+---------+----------| 
+     | clk                             |  ^   | clk         |                          |        |   7.100 |  -35.347 | 
+     | tb0/CTS_ccl_a_BUF_clk_G0_L1_1/A |  ^   | clk         | BUFx8_ASAP7_75t_R        |  4.900 |  12.000 |  -30.447 | 
+     | tb0/CTS_ccl_a_BUF_clk_G0_L1_1/Y |  ^   | tb0/CTS_155 | BUFx8_ASAP7_75t_R        | 28.700 |  40.700 |   -1.747 | 
+     | tb0/CTS_ccl_a_BUF_clk_G0_L2_4/A |  ^   | tb0/CTS_155 | BUFx2_ASAP7_75t_R        |  1.000 |  41.700 |   -0.747 | 
+     | tb0/CTS_ccl_a_BUF_clk_G0_L2_4/Y |  ^   | tb0/CTS_142 | BUFx2_ASAP7_75t_R        | 25.700 |  67.400 |   24.953 | 
+     | tb0/mfwm0_mem_reg_5__2__15_/CLK |  ^   | tb0/CTS_142 | ASYNC_DFFHx1_ASAP7_75t_R |  0.700 |  68.100 |   25.653 | 
+     +---------------------------------------------------------------------------------------------------------------+ 
+Path 2: MET Setup Check with Pin tb0/mfwm0_mem_reg_1__2__15_/CLK 
+Endpoint:   tb0/mfwm0_mem_reg_1__2__15_/D (v) checked with  leading edge of 
+'clk'
+Beginpoint: tb0/sp0_memory_reg_85__2_/QN  (^) triggered by  leading edge of 
+'clk'
+Path Groups: {reg2reg}
+Analysis View: default_setup_view
+Other End Arrival Time         67.600
+- Setup                         5.228
++ Phase Shift                 900.000
+= Required Time               962.362
+- Arrival Time                919.844
+= Slack Time                   42.518
+     Clock Rise Edge                      0.000
+     + Drive Adjustment                   7.700
+     + Source Insertion Delay           -77.356
+     = Beginpoint Arrival Time          -69.656
+     Timing Path:
+     +---------------------------------------------------------------------------------------------------------------------------------------------------------------------+ 
+     |                        Pin                        | Edge |                       Net                       |           Cell           |  Delay | Arrival | Required | 
+     |                                                   |      |                                                 |                          |        |  Time   |   Time   | 
+     |---------------------------------------------------+------+-------------------------------------------------+--------------------------+--------+---------+----------| 
+     | clk                                               |  ^   | clk                                             |                          |        | -69.656 |  -27.138 | 
+     | tb0/CTS_ccl_a_BUF_clk_G0_L1_3/A                   |  ^   | clk                                             | BUFx12f_ASAP7_75t_R      | 16.800 | -52.856 |  -10.338 | 
+     | tb0/CTS_ccl_a_BUF_clk_G0_L1_3/Y                   |  ^   | tb0/CTS_166                                     | BUFx12f_ASAP7_75t_R      | 23.500 | -29.356 |   13.162 | 
+     | tb0/CTS_ccl_a_BUF_clk_G0_L2_38/A                  |  ^   | tb0/CTS_166                                     | BUFx2_ASAP7_75t_R        |  5.500 | -23.856 |   18.662 | 
+     | tb0/CTS_ccl_a_BUF_clk_G0_L2_38/Y                  |  ^   | tb0/CTS_161                                     | BUFx2_ASAP7_75t_R        | 32.300 |   8.444 |   50.962 | 
+     | tb0/sp0_memory_reg_85__2_/CLK                     |  ^   | tb0/CTS_161                                     | ASYNC_DFFHx1_ASAP7_75t_R |  5.200 |  13.644 |   56.162 | 
+     | tb0/sp0_memory_reg_85__2_/QN                      |  ^   | tb0/n1859                                       | ASYNC_DFFHx1_ASAP7_75t_R | 57.100 |  70.744 |  113.262 | 
+     | tb0/vdp0/U3235/A                                  |  ^   | tb0/n1859                                       | NOR2xp33_ASAP7_75t_R     |  0.100 |  70.844 |  113.362 | 
+     | tb0/vdp0/U3235/Y                                  |  v   | tb0/vdp0/DP_OP_478J3_122_4945_n4992             | NOR2xp33_ASAP7_75t_R     | 25.900 |  96.744 |  139.262 | 
+     | tb0/vdp0/DP_OP_478J3_122_4945_U2221/A             |  v   | tb0/vdp0/DP_OP_478J3_122_4945_n4992             | FAx1_ASAP7_75t_R         |  0.100 |  96.844 |  139.362 | 
+     | tb0/vdp0/DP_OP_478J3_122_4945_U2221/CON           |  ^   | tb0/vdp0/DP_OP_478J3_122_4945_n4388             | FAx1_ASAP7_75t_R         | 25.700 | 122.544 |  165.062 | 
+     | tb0/vdp0/FE_RC_2159_0/A                           |  ^   | tb0/vdp0/DP_OP_478J3_122_4945_n4388             | NAND2xp33_ASAP7_75t_R    |  0.200 | 122.744 |  165.262 | 
+     | tb0/vdp0/FE_RC_2159_0/Y                           |  v   | tb0/vdp0/FE_RN_1820_0                           | NAND2xp33_ASAP7_75t_R    | 17.800 | 140.544 |  183.062 | 
+     | tb0/vdp0/FE_RC_2148_0/B                           |  v   | tb0/vdp0/FE_RN_1820_0                           | NAND2xp33_ASAP7_75t_R    |  0.000 | 140.544 |  183.062 | 
+     | tb0/vdp0/FE_RC_2148_0/Y                           |  ^   | tb0/vdp0/FE_RN_1830_0                           | NAND2xp33_ASAP7_75t_R    | 18.000 | 158.544 |  201.062 | 
+     | tb0/vdp0/FE_RC_2147_0/B                           |  ^   | tb0/vdp0/FE_RN_1830_0                           | NAND2x1_ASAP7_75t_R      |  0.000 | 158.544 |  201.062 | 
+     | tb0/vdp0/FE_RC_2147_0/Y                           |  v   | tb0/vdp0/DP_OP_478J3_122_4945_n3742             | NAND2x1_ASAP7_75t_R      | 19.100 | 177.644 |  220.162 | 
+     | tb0/vdp0/DP_OP_478J3_122_4945_U1494/A             |  v   | tb0/vdp0/DP_OP_478J3_122_4945_n3742             | FAx1_ASAP7_75t_R         |  3.700 | 181.344 |  223.862 | 
+     | tb0/vdp0/DP_OP_478J3_122_4945_U1494/SN            |  v   | tb0/vdp0/DP_OP_478J3_122_4945_n2939             | FAx1_ASAP7_75t_R         | 58.100 | 239.444 |  281.962 | 
+     | tb0/vdp0/DP_OP_478J3_122_4945_U1443/B             |  v   | tb0/vdp0/DP_OP_478J3_122_4945_n2939             | FAx1_ASAP7_75t_R         |  0.300 | 239.744 |  282.262 | 
+     | tb0/vdp0/DP_OP_478J3_122_4945_U1443/SN            |  v   | tb0/vdp0/DP_OP_478J3_122_4945_n2837             | FAx1_ASAP7_75t_R         | 71.800 | 311.544 |  354.062 | 
+     | tb0/vdp0/DP_OP_478J3_122_4945_U1404/A             |  v   | tb0/vdp0/DP_OP_478J3_122_4945_n2837             | FAx1_ASAP7_75t_R         |  0.900 | 312.444 |  354.962 | 
+     | tb0/vdp0/DP_OP_478J3_122_4945_U1404/CON           |  ^   | tb0/vdp0/DP_OP_478J3_122_4945_n2758             | FAx1_ASAP7_75t_R         | 26.700 | 339.144 |  381.662 | 
+     | tb0/vdp0/DP_OP_478J3_122_4945_U1404/SN            |  v   | tb0/vdp0/DP_OP_478J3_122_4945_n2759             | FAx1_ASAP7_75t_R         | 13.500 | 352.644 |  395.162 | 
+     | tb0/vdp0/FE_RC_5680_0/A                           |  v   | tb0/vdp0/DP_OP_478J3_122_4945_n2759             | INVxp33_ASAP7_75t_R      |  0.000 | 352.644 |  395.162 | 
+     | tb0/vdp0/FE_RC_5680_0/Y                           |  ^   | tb0/vdp0/FE_RN_4786_0                           | INVxp33_ASAP7_75t_R      | 22.600 | 375.244 |  417.762 | 
+     | tb0/vdp0/FE_RC_5679_0/A                           |  ^   | tb0/vdp0/FE_RN_4786_0                           | NAND2xp5_ASAP7_75t_R     |  0.100 | 375.344 |  417.862 | 
+     | tb0/vdp0/FE_RC_5679_0/Y                           |  v   | tb0/vdp0/FE_RN_4787_0                           | NAND2xp5_ASAP7_75t_R     |  9.700 | 385.044 |  427.562 | 
+     | tb0/vdp0/FE_RC_5678_0/B                           |  v   | tb0/vdp0/FE_RN_4787_0                           | NAND2xp5_ASAP7_75t_R     |  0.000 | 385.044 |  427.562 | 
+     | tb0/vdp0/FE_RC_5678_0/Y                           |  ^   | tb0/vdp0/DP_OP_478J3_122_4945_n2726             | NAND2xp5_ASAP7_75t_R     | 11.000 | 396.044 |  438.562 | 
+     | tb0/vdp0/FE_RC_139_0/A                            |  ^   | tb0/vdp0/DP_OP_478J3_122_4945_n2726             | INVxp33_ASAP7_75t_R      |  0.000 | 396.044 |  438.562 | 
+     | tb0/vdp0/FE_RC_139_0/Y                            |  v   | tb0/vdp0/FE_RN_104_0                            | INVxp33_ASAP7_75t_R      | 18.500 | 414.544 |  457.062 | 
+     | tb0/vdp0/FE_RC_138_0/A                            |  v   | tb0/vdp0/FE_RN_104_0                            | NAND2xp5_ASAP7_75t_R     |  0.100 | 414.644 |  457.162 | 
+     | tb0/vdp0/FE_RC_138_0/Y                            |  ^   | tb0/vdp0/FE_RN_105_0                            | NAND2xp5_ASAP7_75t_R     | 16.900 | 431.544 |  474.062 | 
+     | tb0/vdp0/FE_RC_137_0/B                            |  ^   | tb0/vdp0/FE_RN_105_0                            | OAI21x1_ASAP7_75t_R      |  0.100 | 431.644 |  474.162 | 
+     | tb0/vdp0/FE_RC_137_0/Y                            |  v   | tb0/vdp0/DP_OP_478J3_122_4945_n1957             | OAI21x1_ASAP7_75t_R      | 17.700 | 449.344 |  491.862 | 
+     | tb0/vdp0/DP_OP_478J3_122_4945_U665/A              |  v   | tb0/vdp0/DP_OP_478J3_122_4945_n1957             | FAx1_ASAP7_75t_R         |  1.800 | 451.144 |  493.662 | 
+     | tb0/vdp0/DP_OP_478J3_122_4945_U665/CON            |  ^   | tb0/vdp0/DP_OP_478J3_122_4945_n1282             | FAx1_ASAP7_75t_R         | 29.600 | 480.744 |  523.262 | 
+     | tb0/vdp0/FE_OCPC1567_DP_OP_478J3_122_4945_n1282/A |  ^   | tb0/vdp0/DP_OP_478J3_122_4945_n1282             | HB1xp67_ASAP7_75t_R      |  0.200 | 480.944 |  523.462 | 
+     | tb0/vdp0/FE_OCPC1567_DP_OP_478J3_122_4945_n1282/Y |  ^   | tb0/vdp0/FE_OCPN1567_DP_OP_478J3_122_4945_n1282 | HB1xp67_ASAP7_75t_R      | 19.200 | 500.144 |  542.662 | 
+     | tb0/vdp0/FE_RC_5889_0/A                           |  ^   | tb0/vdp0/FE_OCPN1567_DP_OP_478J3_122_4945_n1282 | INVxp33_ASAP7_75t_R      |  0.000 | 500.144 |  542.662 | 
+     | tb0/vdp0/FE_RC_5889_0/Y                           |  v   | tb0/vdp0/FE_RN_4966_0                           | INVxp33_ASAP7_75t_R      |  8.200 | 508.344 |  550.862 | 
+     | tb0/vdp0/FE_RC_5888_0/A1                          |  v   | tb0/vdp0/FE_RN_4966_0                           | OAI21xp5_ASAP7_75t_R     |  0.000 | 508.344 |  550.862 | 
+     | tb0/vdp0/FE_RC_5888_0/Y                           |  ^   | tb0/vdp0/FE_RN_4967_0                           | OAI21xp5_ASAP7_75t_R     |  8.300 | 516.644 |  559.162 | 
+     | tb0/vdp0/FE_RC_5887_0/A                           |  ^   | tb0/vdp0/FE_RN_4967_0                           | INVxp33_ASAP7_75t_R      |  0.000 | 516.644 |  559.162 | 
+     | tb0/vdp0/FE_RC_5887_0/Y                           |  v   | tb0/vdp0/FE_RN_4968_0                           | INVxp33_ASAP7_75t_R      |  8.700 | 525.344 |  567.862 | 
+     | tb0/vdp0/FE_RC_5886_0/B                           |  v   | tb0/vdp0/FE_RN_4968_0                           | NAND2xp5_ASAP7_75t_R     |  0.000 | 525.344 |  567.862 | 
+     | tb0/vdp0/FE_RC_5886_0/Y                           |  ^   | tb0/vdp0/FE_RN_4969_0                           | NAND2xp5_ASAP7_75t_R     | 10.900 | 536.244 |  578.763 | 
+     | tb0/vdp0/FE_RC_5881_0/B                           |  ^   | tb0/vdp0/FE_RN_4969_0                           | OAI21x1_ASAP7_75t_R      |  0.100 | 536.344 |  578.862 | 
+     | tb0/vdp0/FE_RC_5881_0/Y                           |  v   | tb0/vdp0/DP_OP_478J3_122_4945_n753              | OAI21x1_ASAP7_75t_R      | 13.600 | 549.944 |  592.462 | 
+     | tb0/vdp0/FE_RC_5327_0/A                           |  v   | tb0/vdp0/DP_OP_478J3_122_4945_n753              | INVxp33_ASAP7_75t_R      |  0.100 | 550.044 |  592.562 | 
+     | tb0/vdp0/FE_RC_5327_0/Y                           |  ^   | tb0/vdp0/FE_RN_4493_0                           | INVxp33_ASAP7_75t_R      | 16.600 | 566.644 |  609.162 | 
+     | tb0/vdp0/FE_RC_5323_0/A                           |  ^   | tb0/vdp0/FE_RN_4493_0                           | NOR2xp33_ASAP7_75t_R     |  0.000 | 566.644 |  609.162 | 
+     | tb0/vdp0/FE_RC_5323_0/Y                           |  v   | tb0/vdp0/FE_RN_4496_0                           | NOR2xp33_ASAP7_75t_R     | 13.700 | 580.344 |  622.862 | 
+     | tb0/vdp0/FE_RC_5322_0/B                           |  v   | tb0/vdp0/FE_RN_4496_0                           | NAND2xp5_ASAP7_75t_R     |  0.000 | 580.344 |  622.862 | 
+     | tb0/vdp0/FE_RC_5322_0/Y                           |  ^   | tb0/vdp0/FE_RN_4497_0                           | NAND2xp5_ASAP7_75t_R     |  8.700 | 589.044 |  631.562 | 
+     | tb0/vdp0/FE_RC_5315_0/C                           |  ^   | tb0/vdp0/FE_RN_4497_0                           | OAI211xp5_ASAP7_75t_R    |  0.000 | 589.044 |  631.562 | 
+     | tb0/vdp0/FE_RC_5315_0/Y                           |  v   | tb0/vdp0/DP_OP_478J3_122_4945_n741              | OAI211xp5_ASAP7_75t_R    | 10.900 | 599.944 |  642.462 | 
+     | tb0/vdp0/FE_OCPC106_DP_OP_478J3_122_4945_n741/A   |  v   | tb0/vdp0/DP_OP_478J3_122_4945_n741              | BUFx2_ASAP7_75t_R        |  0.000 | 599.944 |  642.462 | 
+     | tb0/vdp0/FE_OCPC106_DP_OP_478J3_122_4945_n741/Y   |  v   | tb0/vdp0/FE_OCPN92_DP_OP_478J3_122_4945_n741    | BUFx2_ASAP7_75t_R        | 17.100 | 617.044 |  659.562 | 
+     | tb0/vdp0/FE_RC_5379_0/A                           |  v   | tb0/vdp0/FE_OCPN92_DP_OP_478J3_122_4945_n741    | NOR2x1_ASAP7_75t_R       |  0.100 | 617.144 |  659.662 | 
+     | tb0/vdp0/FE_RC_5379_0/Y                           |  ^   | tb0/vdp0/FE_RN_4546_0                           | NOR2x1_ASAP7_75t_R       | 10.600 | 627.744 |  670.262 | 
+     | tb0/vdp0/FE_RC_5386_0/A                           |  ^   | tb0/vdp0/FE_RN_4546_0                           | INVxp33_ASAP7_75t_R      |  0.100 | 627.844 |  670.362 | 
+     | tb0/vdp0/FE_RC_5386_0/Y                           |  v   | tb0/vdp0/FE_RN_4540_0                           | INVxp33_ASAP7_75t_R      | 10.800 | 638.644 |  681.162 | 
+     | tb0/vdp0/FE_RC_5384_0/A                           |  v   | tb0/vdp0/FE_RN_4540_0                           | NAND2xp5_ASAP7_75t_R     |  0.000 | 638.644 |  681.162 | 
+     | tb0/vdp0/FE_RC_5384_0/Y                           |  ^   | tb0/vdp0/FE_RN_4542_0                           | NAND2xp5_ASAP7_75t_R     |  8.500 | 647.144 |  689.662 | 
+     | tb0/vdp0/FE_RC_5753_0/A1                          |  ^   | tb0/vdp0/FE_RN_4542_0                           | OAI22xp33_ASAP7_75t_R    |  0.000 | 647.144 |  689.662 | 
+     | tb0/vdp0/FE_RC_5753_0/Y                           |  v   | tb0/vdp0/DP_OP_478J3_122_4945_n735              | OAI22xp33_ASAP7_75t_R    |  9.800 | 656.944 |  699.462 | 
+     | tb0/vdp0/U58/A                                    |  v   | tb0/vdp0/DP_OP_478J3_122_4945_n735              | INVxp33_ASAP7_75t_R      |  0.000 | 656.944 |  699.462 | 
+     | tb0/vdp0/U58/Y                                    |  ^   | tb0/vdp0/DP_OP_478J3_122_4945_n731              | INVxp33_ASAP7_75t_R      | 25.400 | 682.344 |  724.862 | 
+     | tb0/vdp0/FE_RC_5254_0/B                           |  ^   | tb0/vdp0/DP_OP_478J3_122_4945_n731              | NAND2xp5_ASAP7_75t_R     |  0.100 | 682.444 |  724.962 | 
+     | tb0/vdp0/FE_RC_5254_0/Y                           |  v   | tb0/vdp0/FE_RN_4450_0                           | NAND2xp5_ASAP7_75t_R     | 16.400 | 698.844 |  741.362 | 
+     | tb0/vdp0/FE_RC_5252_0/A2                          |  v   | tb0/vdp0/FE_RN_4450_0                           | AO21x2_ASAP7_75t_R       |  0.100 | 698.944 |  741.462 | 
+     | tb0/vdp0/FE_RC_5252_0/Y                           |  v   | tb0/vdp0/DP_OP_478J3_122_4945_n12               | AO21x2_ASAP7_75t_R       | 22.100 | 721.044 |  763.562 | 
+     | tb0/vdp0/DP_OP_478J3_122_4945_U16/A               |  v   | tb0/vdp0/DP_OP_478J3_122_4945_n12               | FAx1_ASAP7_75t_R         |  0.300 | 721.344 |  763.862 | 
+     | tb0/vdp0/DP_OP_478J3_122_4945_U16/CON             |  ^   | tb0/vdp0/DP_OP_478J3_122_4945_n11               | FAx1_ASAP7_75t_R         | 23.200 | 744.544 |  787.062 | 
+     | tb0/vdp0/DP_OP_478J3_122_4945_U15/A               |  ^   | tb0/vdp0/DP_OP_478J3_122_4945_n11               | FAx1_ASAP7_75t_R         |  0.100 | 744.644 |  787.162 | 
+     | tb0/vdp0/DP_OP_478J3_122_4945_U15/CON             |  v   | tb0/vdp0/DP_OP_478J3_122_4945_n10               | FAx1_ASAP7_75t_R         | 20.100 | 764.744 |  807.262 | 
+     | tb0/vdp0/FE_RC_6628_0/A2                          |  v   | tb0/vdp0/DP_OP_478J3_122_4945_n10               | OA21x2_ASAP7_75t_R       |  0.100 | 764.844 |  807.362 | 
+     | tb0/vdp0/FE_RC_6628_0/Y                           |  v   | tb0/vdp0/DP_OP_478J3_122_4945_n3                | OA21x2_ASAP7_75t_R       | 23.300 | 788.144 |  830.662 | 
+     | tb0/vdp0/FE_RC_69_0/A1                            |  v   | tb0/vdp0/DP_OP_478J3_122_4945_n3                | OAI21x1_ASAP7_75t_R      |  0.100 | 788.244 |  830.762 | 
+     | tb0/vdp0/FE_RC_69_0/Y                             |  ^   | tb0/vdp0/DP_OP_478J3_122_4945_n8                | OAI21x1_ASAP7_75t_R      | 12.400 | 800.644 |  843.162 | 
+     | tb0/vdp0/FE_RC_9_0/A                              |  ^   | tb0/vdp0/DP_OP_478J3_122_4945_n8                | NAND2x1p5_ASAP7_75t_R    |  0.100 | 800.744 |  843.262 | 
+     | tb0/vdp0/FE_RC_9_0/Y                              |  v   | tb0/vdp0/FE_RN_2_0                              | NAND2x1p5_ASAP7_75t_R    |  7.900 | 808.644 |  851.162 | 
+     | tb0/vdp0/FE_RC_8_0/B                              |  v   | tb0/vdp0/FE_RN_2_0                              | NAND2x1p5_ASAP7_75t_R    |  0.100 | 808.744 |  851.262 | 
+     | tb0/vdp0/FE_RC_8_0/Y                              |  ^   | tb0/vdp0/DP_OP_478J3_122_4945_n7                | NAND2x1p5_ASAP7_75t_R    | 10.500 | 819.244 |  861.762 | 
+     | tb0/vdp0/FE_RC_6626_0/A1                          |  ^   | tb0/vdp0/DP_OP_478J3_122_4945_n7                | OA21x2_ASAP7_75t_R       |  0.500 | 819.744 |  862.262 | 
+     | tb0/vdp0/FE_RC_6626_0/Y                           |  ^   | tb0/vdp0/DP_OP_478J3_122_4945_n21               | OA21x2_ASAP7_75t_R       | 18.700 | 838.444 |  880.962 | 
+     | tb0/vdp0/FE_RC_6902_0/A1                          |  ^   | tb0/vdp0/DP_OP_478J3_122_4945_n21               | OAI21xp5_ASAP7_75t_R     |  0.100 | 838.544 |  881.062 | 
+     | tb0/vdp0/FE_RC_6902_0/Y                           |  v   | tb0/vdp0/DP_OP_478J3_122_4945_n5                | OAI21xp5_ASAP7_75t_R     | 11.700 | 850.244 |  892.762 | 
+     | tb0/vdp0/FE_RC_43_0/A                             |  v   | tb0/vdp0/DP_OP_478J3_122_4945_n5                | NAND2xp5_ASAP7_75t_R     |  0.100 | 850.344 |  892.862 | 
+     | tb0/vdp0/FE_RC_43_0/Y                             |  ^   | tb0/vdp0/FE_RN_33_0                             | NAND2xp5_ASAP7_75t_R     | 10.500 | 860.844 |  903.362 | 
+     | tb0/vdp0/FE_RC_6624_0/B                           |  ^   | tb0/vdp0/FE_RN_33_0                             | OAI21xp5_ASAP7_75t_R     |  0.000 | 860.844 |  903.362 | 
+     | tb0/vdp0/FE_RC_6624_0/Y                           |  v   | tb0/fm_wm_value[15]                             | OAI21xp5_ASAP7_75t_R     | 15.800 | 876.644 |  919.162 | 
+     | tb0/FE_OCPC7_fm_wm_value_15/A                     |  v   | tb0/fm_wm_value[15]                             | BUFx6f_ASAP7_75t_R       |  0.100 | 876.744 |  919.262 | 
+     | tb0/FE_OCPC7_fm_wm_value_15/Y                     |  v   | tb0/FE_OCPN3_fm_wm_value_15                     | BUFx6f_ASAP7_75t_R       | 19.200 | 895.944 |  938.462 | 
+     | tb0/FE_RC_6773_0/A                                |  v   | tb0/FE_OCPN3_fm_wm_value_15                     | NAND3x1_ASAP7_75t_R      |  1.500 | 897.444 |  939.962 | 
+     | tb0/FE_RC_6773_0/Y                                |  ^   | tb0/n1379                                       | NAND3x1_ASAP7_75t_R      |  8.400 | 905.844 |  948.362 | 
+     | tb0/U2311/C                                       |  ^   | tb0/n1379                                       | A2O1A1Ixp33_ASAP7_75t_R  |  0.000 | 905.844 |  948.362 | 
+     | tb0/U2311/Y                                       |  v   | tb0/n3303                                       | A2O1A1Ixp33_ASAP7_75t_R  | 14.000 | 919.844 |  962.362 | 
+     | tb0/mfwm0_mem_reg_1__2__15_/D                     |  v   | tb0/n3303                                       | ASYNC_DFFHx1_ASAP7_75t_R |  0.000 | 919.844 |  962.362 | 
+     +---------------------------------------------------------------------------------------------------------------------------------------------------------------------+ 
+     Clock Rise Edge                      0.000
+     + Drive Adjustment                   7.100
+     = Beginpoint Arrival Time            7.100
+     Other End Path:
+     +----------------------------------------------------------------------------------------------------------------+ 
+     |               Pin                | Edge |     Net     |           Cell           |  Delay | Arrival | Required | 
+     |                                  |      |             |                          |        |  Time   |   Time   | 
+     |----------------------------------+------+-------------+--------------------------+--------+---------+----------| 
+     | clk                              |  ^   | clk         |                          |        |   7.100 |  -35.418 | 
+     | tb0/CTS_ccl_a_BUF_clk_G0_L1_1/A  |  ^   | clk         | BUFx8_ASAP7_75t_R        |  4.900 |  12.000 |  -30.518 | 
+     | tb0/CTS_ccl_a_BUF_clk_G0_L1_1/Y  |  ^   | tb0/CTS_155 | BUFx8_ASAP7_75t_R        | 28.700 |  40.700 |   -1.818 | 
+     | tb0/CTS_ccl_a_BUF_clk_G0_L2_11/A |  ^   | tb0/CTS_155 | BUFx2_ASAP7_75t_R        |  0.700 |  41.400 |   -1.118 | 
+     | tb0/CTS_ccl_a_BUF_clk_G0_L2_11/Y |  ^   | tb0/CTS_149 | BUFx2_ASAP7_75t_R        | 25.300 |  66.700 |   24.182 | 
+     | tb0/mfwm0_mem_reg_1__2__15_/CLK  |  ^   | tb0/CTS_149 | ASYNC_DFFHx1_ASAP7_75t_R |  0.900 |  67.600 |   25.082 | 
+     +----------------------------------------------------------------------------------------------------------------+ 
+Path 3: MET Setup Check with Pin tb0/mfwm0_mem_reg_4__0__12_/CLK 
+Endpoint:   tb0/mfwm0_mem_reg_4__0__12_/D (v) checked with  leading edge of 
+'clk'
+Beginpoint: tb0/sp0_memory_reg_85__2_/QN  (^) triggered by  leading edge of 
+'clk'
+Path Groups: {reg2reg}
+Analysis View: default_setup_view
+Other End Arrival Time         62.300
+- Setup                         5.413
++ Phase Shift                 900.000
+= Required Time               956.877
+- Arrival Time                912.944
+= Slack Time                   43.933
+     Clock Rise Edge                      0.000
+     + Drive Adjustment                   7.700
+     + Source Insertion Delay           -77.356
+     = Beginpoint Arrival Time          -69.656
+     Timing Path:
+     +---------------------------------------------------------------------------------------------------------------------------------------------------------------------+ 
+     |                        Pin                        | Edge |                       Net                       |           Cell           |  Delay | Arrival | Required | 
+     |                                                   |      |                                                 |                          |        |  Time   |   Time   | 
+     |---------------------------------------------------+------+-------------------------------------------------+--------------------------+--------+---------+----------| 
+     | clk                                               |  ^   | clk                                             |                          |        | -69.656 |  -25.723 | 
+     | tb0/CTS_ccl_a_BUF_clk_G0_L1_3/A                   |  ^   | clk                                             | BUFx12f_ASAP7_75t_R      | 16.800 | -52.856 |   -8.923 | 
+     | tb0/CTS_ccl_a_BUF_clk_G0_L1_3/Y                   |  ^   | tb0/CTS_166                                     | BUFx12f_ASAP7_75t_R      | 23.500 | -29.356 |   14.577 | 
+     | tb0/CTS_ccl_a_BUF_clk_G0_L2_38/A                  |  ^   | tb0/CTS_166                                     | BUFx2_ASAP7_75t_R        |  5.500 | -23.856 |   20.077 | 
+     | tb0/CTS_ccl_a_BUF_clk_G0_L2_38/Y                  |  ^   | tb0/CTS_161                                     | BUFx2_ASAP7_75t_R        | 32.300 |   8.444 |   52.377 | 
+     | tb0/sp0_memory_reg_85__2_/CLK                     |  ^   | tb0/CTS_161                                     | ASYNC_DFFHx1_ASAP7_75t_R |  5.200 |  13.644 |   57.577 | 
+     | tb0/sp0_memory_reg_85__2_/QN                      |  ^   | tb0/n1859                                       | ASYNC_DFFHx1_ASAP7_75t_R | 57.100 |  70.744 |  114.677 | 
+     | tb0/vdp0/U3235/A                                  |  ^   | tb0/n1859                                       | NOR2xp33_ASAP7_75t_R     |  0.100 |  70.844 |  114.777 | 
+     | tb0/vdp0/U3235/Y                                  |  v   | tb0/vdp0/DP_OP_478J3_122_4945_n4992             | NOR2xp33_ASAP7_75t_R     | 25.900 |  96.744 |  140.677 | 
+     | tb0/vdp0/DP_OP_478J3_122_4945_U2221/A             |  v   | tb0/vdp0/DP_OP_478J3_122_4945_n4992             | FAx1_ASAP7_75t_R         |  0.100 |  96.844 |  140.777 | 
+     | tb0/vdp0/DP_OP_478J3_122_4945_U2221/CON           |  ^   | tb0/vdp0/DP_OP_478J3_122_4945_n4388             | FAx1_ASAP7_75t_R         | 25.700 | 122.544 |  166.477 | 
+     | tb0/vdp0/FE_RC_2159_0/A                           |  ^   | tb0/vdp0/DP_OP_478J3_122_4945_n4388             | NAND2xp33_ASAP7_75t_R    |  0.200 | 122.744 |  166.677 | 
+     | tb0/vdp0/FE_RC_2159_0/Y                           |  v   | tb0/vdp0/FE_RN_1820_0                           | NAND2xp33_ASAP7_75t_R    | 17.800 | 140.544 |  184.477 | 
+     | tb0/vdp0/FE_RC_2148_0/B                           |  v   | tb0/vdp0/FE_RN_1820_0                           | NAND2xp33_ASAP7_75t_R    |  0.000 | 140.544 |  184.477 | 
+     | tb0/vdp0/FE_RC_2148_0/Y                           |  ^   | tb0/vdp0/FE_RN_1830_0                           | NAND2xp33_ASAP7_75t_R    | 18.000 | 158.544 |  202.477 | 
+     | tb0/vdp0/FE_RC_2147_0/B                           |  ^   | tb0/vdp0/FE_RN_1830_0                           | NAND2x1_ASAP7_75t_R      |  0.000 | 158.544 |  202.477 | 
+     | tb0/vdp0/FE_RC_2147_0/Y                           |  v   | tb0/vdp0/DP_OP_478J3_122_4945_n3742             | NAND2x1_ASAP7_75t_R      | 19.100 | 177.644 |  221.577 | 
+     | tb0/vdp0/DP_OP_478J3_122_4945_U1494/A             |  v   | tb0/vdp0/DP_OP_478J3_122_4945_n3742             | FAx1_ASAP7_75t_R         |  3.700 | 181.344 |  225.277 | 
+     | tb0/vdp0/DP_OP_478J3_122_4945_U1494/SN            |  v   | tb0/vdp0/DP_OP_478J3_122_4945_n2939             | FAx1_ASAP7_75t_R         | 58.100 | 239.444 |  283.377 | 
+     | tb0/vdp0/DP_OP_478J3_122_4945_U1443/B             |  v   | tb0/vdp0/DP_OP_478J3_122_4945_n2939             | FAx1_ASAP7_75t_R         |  0.300 | 239.744 |  283.677 | 
+     | tb0/vdp0/DP_OP_478J3_122_4945_U1443/SN            |  v   | tb0/vdp0/DP_OP_478J3_122_4945_n2837             | FAx1_ASAP7_75t_R         | 71.800 | 311.544 |  355.477 | 
+     | tb0/vdp0/DP_OP_478J3_122_4945_U1404/A             |  v   | tb0/vdp0/DP_OP_478J3_122_4945_n2837             | FAx1_ASAP7_75t_R         |  0.900 | 312.444 |  356.377 | 
+     | tb0/vdp0/DP_OP_478J3_122_4945_U1404/CON           |  ^   | tb0/vdp0/DP_OP_478J3_122_4945_n2758             | FAx1_ASAP7_75t_R         | 26.700 | 339.144 |  383.077 | 
+     | tb0/vdp0/DP_OP_478J3_122_4945_U1404/SN            |  v   | tb0/vdp0/DP_OP_478J3_122_4945_n2759             | FAx1_ASAP7_75t_R         | 13.500 | 352.644 |  396.577 | 
+     | tb0/vdp0/FE_RC_5680_0/A                           |  v   | tb0/vdp0/DP_OP_478J3_122_4945_n2759             | INVxp33_ASAP7_75t_R      |  0.000 | 352.644 |  396.577 | 
+     | tb0/vdp0/FE_RC_5680_0/Y                           |  ^   | tb0/vdp0/FE_RN_4786_0                           | INVxp33_ASAP7_75t_R      | 22.600 | 375.244 |  419.177 | 
+     | tb0/vdp0/FE_RC_5679_0/A                           |  ^   | tb0/vdp0/FE_RN_4786_0                           | NAND2xp5_ASAP7_75t_R     |  0.100 | 375.344 |  419.277 | 
+     | tb0/vdp0/FE_RC_5679_0/Y                           |  v   | tb0/vdp0/FE_RN_4787_0                           | NAND2xp5_ASAP7_75t_R     |  9.700 | 385.044 |  428.977 | 
+     | tb0/vdp0/FE_RC_5678_0/B                           |  v   | tb0/vdp0/FE_RN_4787_0                           | NAND2xp5_ASAP7_75t_R     |  0.000 | 385.044 |  428.977 | 
+     | tb0/vdp0/FE_RC_5678_0/Y                           |  ^   | tb0/vdp0/DP_OP_478J3_122_4945_n2726             | NAND2xp5_ASAP7_75t_R     | 11.000 | 396.044 |  439.977 | 
+     | tb0/vdp0/FE_RC_139_0/A                            |  ^   | tb0/vdp0/DP_OP_478J3_122_4945_n2726             | INVxp33_ASAP7_75t_R      |  0.000 | 396.044 |  439.977 | 
+     | tb0/vdp0/FE_RC_139_0/Y                            |  v   | tb0/vdp0/FE_RN_104_0                            | INVxp33_ASAP7_75t_R      | 18.500 | 414.544 |  458.477 | 
+     | tb0/vdp0/FE_RC_138_0/A                            |  v   | tb0/vdp0/FE_RN_104_0                            | NAND2xp5_ASAP7_75t_R     |  0.100 | 414.644 |  458.577 | 
+     | tb0/vdp0/FE_RC_138_0/Y                            |  ^   | tb0/vdp0/FE_RN_105_0                            | NAND2xp5_ASAP7_75t_R     | 16.900 | 431.544 |  475.477 | 
+     | tb0/vdp0/FE_RC_137_0/B                            |  ^   | tb0/vdp0/FE_RN_105_0                            | OAI21x1_ASAP7_75t_R      |  0.100 | 431.644 |  475.577 | 
+     | tb0/vdp0/FE_RC_137_0/Y                            |  v   | tb0/vdp0/DP_OP_478J3_122_4945_n1957             | OAI21x1_ASAP7_75t_R      | 17.700 | 449.344 |  493.277 | 
+     | tb0/vdp0/DP_OP_478J3_122_4945_U665/A              |  v   | tb0/vdp0/DP_OP_478J3_122_4945_n1957             | FAx1_ASAP7_75t_R         |  1.800 | 451.144 |  495.077 | 
+     | tb0/vdp0/DP_OP_478J3_122_4945_U665/CON            |  ^   | tb0/vdp0/DP_OP_478J3_122_4945_n1282             | FAx1_ASAP7_75t_R         | 29.600 | 480.744 |  524.677 | 
+     | tb0/vdp0/FE_OCPC1567_DP_OP_478J3_122_4945_n1282/A |  ^   | tb0/vdp0/DP_OP_478J3_122_4945_n1282             | HB1xp67_ASAP7_75t_R      |  0.200 | 480.944 |  524.877 | 
+     | tb0/vdp0/FE_OCPC1567_DP_OP_478J3_122_4945_n1282/Y |  ^   | tb0/vdp0/FE_OCPN1567_DP_OP_478J3_122_4945_n1282 | HB1xp67_ASAP7_75t_R      | 19.200 | 500.144 |  544.077 | 
+     | tb0/vdp0/FE_RC_5889_0/A                           |  ^   | tb0/vdp0/FE_OCPN1567_DP_OP_478J3_122_4945_n1282 | INVxp33_ASAP7_75t_R      |  0.000 | 500.144 |  544.077 | 
+     | tb0/vdp0/FE_RC_5889_0/Y                           |  v   | tb0/vdp0/FE_RN_4966_0                           | INVxp33_ASAP7_75t_R      |  8.200 | 508.344 |  552.277 | 
+     | tb0/vdp0/FE_RC_5888_0/A1                          |  v   | tb0/vdp0/FE_RN_4966_0                           | OAI21xp5_ASAP7_75t_R     |  0.000 | 508.344 |  552.277 | 
+     | tb0/vdp0/FE_RC_5888_0/Y                           |  ^   | tb0/vdp0/FE_RN_4967_0                           | OAI21xp5_ASAP7_75t_R     |  8.300 | 516.644 |  560.577 | 
+     | tb0/vdp0/FE_RC_5887_0/A                           |  ^   | tb0/vdp0/FE_RN_4967_0                           | INVxp33_ASAP7_75t_R      |  0.000 | 516.644 |  560.577 | 
+     | tb0/vdp0/FE_RC_5887_0/Y                           |  v   | tb0/vdp0/FE_RN_4968_0                           | INVxp33_ASAP7_75t_R      |  8.700 | 525.344 |  569.277 | 
+     | tb0/vdp0/FE_RC_5886_0/B                           |  v   | tb0/vdp0/FE_RN_4968_0                           | NAND2xp5_ASAP7_75t_R     |  0.000 | 525.344 |  569.277 | 
+     | tb0/vdp0/FE_RC_5886_0/Y                           |  ^   | tb0/vdp0/FE_RN_4969_0                           | NAND2xp5_ASAP7_75t_R     | 10.900 | 536.244 |  580.177 | 
+     | tb0/vdp0/FE_RC_5881_0/B                           |  ^   | tb0/vdp0/FE_RN_4969_0                           | OAI21x1_ASAP7_75t_R      |  0.100 | 536.344 |  580.277 | 
+     | tb0/vdp0/FE_RC_5881_0/Y                           |  v   | tb0/vdp0/DP_OP_478J3_122_4945_n753              | OAI21x1_ASAP7_75t_R      | 13.600 | 549.944 |  593.877 | 
+     | tb0/vdp0/FE_RC_5327_0/A                           |  v   | tb0/vdp0/DP_OP_478J3_122_4945_n753              | INVxp33_ASAP7_75t_R      |  0.100 | 550.044 |  593.977 | 
+     | tb0/vdp0/FE_RC_5327_0/Y                           |  ^   | tb0/vdp0/FE_RN_4493_0                           | INVxp33_ASAP7_75t_R      | 16.600 | 566.644 |  610.577 | 
+     | tb0/vdp0/FE_RC_5323_0/A                           |  ^   | tb0/vdp0/FE_RN_4493_0                           | NOR2xp33_ASAP7_75t_R     |  0.000 | 566.644 |  610.577 | 
+     | tb0/vdp0/FE_RC_5323_0/Y                           |  v   | tb0/vdp0/FE_RN_4496_0                           | NOR2xp33_ASAP7_75t_R     | 13.700 | 580.344 |  624.277 | 
+     | tb0/vdp0/FE_RC_5322_0/B                           |  v   | tb0/vdp0/FE_RN_4496_0                           | NAND2xp5_ASAP7_75t_R     |  0.000 | 580.344 |  624.277 | 
+     | tb0/vdp0/FE_RC_5322_0/Y                           |  ^   | tb0/vdp0/FE_RN_4497_0                           | NAND2xp5_ASAP7_75t_R     |  8.700 | 589.044 |  632.977 | 
+     | tb0/vdp0/FE_RC_5315_0/C                           |  ^   | tb0/vdp0/FE_RN_4497_0                           | OAI211xp5_ASAP7_75t_R    |  0.000 | 589.044 |  632.977 | 
+     | tb0/vdp0/FE_RC_5315_0/Y                           |  v   | tb0/vdp0/DP_OP_478J3_122_4945_n741              | OAI211xp5_ASAP7_75t_R    | 10.900 | 599.944 |  643.877 | 
+     | tb0/vdp0/FE_OCPC106_DP_OP_478J3_122_4945_n741/A   |  v   | tb0/vdp0/DP_OP_478J3_122_4945_n741              | BUFx2_ASAP7_75t_R        |  0.000 | 599.944 |  643.877 | 
+     | tb0/vdp0/FE_OCPC106_DP_OP_478J3_122_4945_n741/Y   |  v   | tb0/vdp0/FE_OCPN92_DP_OP_478J3_122_4945_n741    | BUFx2_ASAP7_75t_R        | 17.100 | 617.044 |  660.977 | 
+     | tb0/vdp0/FE_RC_5379_0/A                           |  v   | tb0/vdp0/FE_OCPN92_DP_OP_478J3_122_4945_n741    | NOR2x1_ASAP7_75t_R       |  0.100 | 617.144 |  661.077 | 
+     | tb0/vdp0/FE_RC_5379_0/Y                           |  ^   | tb0/vdp0/FE_RN_4546_0                           | NOR2x1_ASAP7_75t_R       | 10.600 | 627.744 |  671.677 | 
+     | tb0/vdp0/FE_RC_5386_0/A                           |  ^   | tb0/vdp0/FE_RN_4546_0                           | INVxp33_ASAP7_75t_R      |  0.100 | 627.844 |  671.777 | 
+     | tb0/vdp0/FE_RC_5386_0/Y                           |  v   | tb0/vdp0/FE_RN_4540_0                           | INVxp33_ASAP7_75t_R      | 10.800 | 638.644 |  682.577 | 
+     | tb0/vdp0/FE_RC_5384_0/A                           |  v   | tb0/vdp0/FE_RN_4540_0                           | NAND2xp5_ASAP7_75t_R     |  0.000 | 638.644 |  682.577 | 
+     | tb0/vdp0/FE_RC_5384_0/Y                           |  ^   | tb0/vdp0/FE_RN_4542_0                           | NAND2xp5_ASAP7_75t_R     |  8.500 | 647.144 |  691.077 | 
+     | tb0/vdp0/FE_RC_5753_0/A1                          |  ^   | tb0/vdp0/FE_RN_4542_0                           | OAI22xp33_ASAP7_75t_R    |  0.000 | 647.144 |  691.077 | 
+     | tb0/vdp0/FE_RC_5753_0/Y                           |  v   | tb0/vdp0/DP_OP_478J3_122_4945_n735              | OAI22xp33_ASAP7_75t_R    |  9.800 | 656.944 |  700.877 | 
+     | tb0/vdp0/U58/A                                    |  v   | tb0/vdp0/DP_OP_478J3_122_4945_n735              | INVxp33_ASAP7_75t_R      |  0.000 | 656.944 |  700.877 | 
+     | tb0/vdp0/U58/Y                                    |  ^   | tb0/vdp0/DP_OP_478J3_122_4945_n731              | INVxp33_ASAP7_75t_R      | 25.400 | 682.344 |  726.277 | 
+     | tb0/vdp0/FE_RC_5254_0/B                           |  ^   | tb0/vdp0/DP_OP_478J3_122_4945_n731              | NAND2xp5_ASAP7_75t_R     |  0.100 | 682.444 |  726.377 | 
+     | tb0/vdp0/FE_RC_5254_0/Y                           |  v   | tb0/vdp0/FE_RN_4450_0                           | NAND2xp5_ASAP7_75t_R     | 16.400 | 698.844 |  742.777 | 
+     | tb0/vdp0/FE_RC_5252_0/A2                          |  v   | tb0/vdp0/FE_RN_4450_0                           | AO21x2_ASAP7_75t_R       |  0.100 | 698.944 |  742.877 | 
+     | tb0/vdp0/FE_RC_5252_0/Y                           |  v   | tb0/vdp0/DP_OP_478J3_122_4945_n12               | AO21x2_ASAP7_75t_R       | 22.100 | 721.044 |  764.977 | 
+     | tb0/vdp0/DP_OP_478J3_122_4945_U16/A               |  v   | tb0/vdp0/DP_OP_478J3_122_4945_n12               | FAx1_ASAP7_75t_R         |  0.300 | 721.344 |  765.277 | 
+     | tb0/vdp0/DP_OP_478J3_122_4945_U16/CON             |  ^   | tb0/vdp0/DP_OP_478J3_122_4945_n11               | FAx1_ASAP7_75t_R         | 23.200 | 744.544 |  788.477 | 
+     | tb0/vdp0/DP_OP_478J3_122_4945_U15/A               |  ^   | tb0/vdp0/DP_OP_478J3_122_4945_n11               | FAx1_ASAP7_75t_R         |  0.100 | 744.644 |  788.577 | 
+     | tb0/vdp0/DP_OP_478J3_122_4945_U15/CON             |  v   | tb0/vdp0/DP_OP_478J3_122_4945_n10               | FAx1_ASAP7_75t_R         | 20.100 | 764.744 |  808.677 | 
+     | tb0/vdp0/FE_RC_6628_0/A2                          |  v   | tb0/vdp0/DP_OP_478J3_122_4945_n10               | OA21x2_ASAP7_75t_R       |  0.100 | 764.844 |  808.777 | 
+     | tb0/vdp0/FE_RC_6628_0/Y                           |  v   | tb0/vdp0/DP_OP_478J3_122_4945_n3                | OA21x2_ASAP7_75t_R       | 23.300 | 788.144 |  832.077 | 
+     | tb0/vdp0/FE_RC_69_0/A1                            |  v   | tb0/vdp0/DP_OP_478J3_122_4945_n3                | OAI21x1_ASAP7_75t_R      |  0.100 | 788.244 |  832.177 | 
+     | tb0/vdp0/FE_RC_69_0/Y                             |  ^   | tb0/vdp0/DP_OP_478J3_122_4945_n8                | OAI21x1_ASAP7_75t_R      | 12.400 | 800.644 |  844.577 | 
+     | tb0/vdp0/FE_OCPC10_DP_OP_478J3_122_4945_n8/A      |  ^   | tb0/vdp0/DP_OP_478J3_122_4945_n8                | HB1xp67_ASAP7_75t_R      |  0.100 | 800.744 |  844.677 | 
+     | tb0/vdp0/FE_OCPC10_DP_OP_478J3_122_4945_n8/Y      |  ^   | tb0/vdp0/FE_OCPN4_DP_OP_478J3_122_4945_n8       | HB1xp67_ASAP7_75t_R      | 15.300 | 816.044 |  859.977 | 
+     | tb0/vdp0/FE_OCPC9_DP_OP_478J3_122_4945_n8/A       |  ^   | tb0/vdp0/FE_OCPN4_DP_OP_478J3_122_4945_n8       | INVx1_ASAP7_75t_R        |  0.000 | 816.044 |  859.977 | 
+     | tb0/vdp0/FE_OCPC9_DP_OP_478J3_122_4945_n8/Y       |  v   | tb0/vdp0/FE_RN_1_0                              | INVx1_ASAP7_75t_R        |  6.300 | 822.344 |  866.277 | 
+     | tb0/vdp0/FE_RC_4_0/A                              |  v   | tb0/vdp0/FE_RN_1_0                              | INVx1_ASAP7_75t_R        |  0.000 | 822.344 |  866.277 | 
+     | tb0/vdp0/FE_RC_4_0/Y                              |  ^   | tb0/vdp0/FE_RN_6_0                              | INVx1_ASAP7_75t_R        |  4.300 | 826.644 |  870.577 | 
+     | tb0/vdp0/FE_RC_1_0/A                              |  ^   | tb0/vdp0/FE_RN_6_0                              | NOR2xp33_ASAP7_75t_R     |  0.000 | 826.644 |  870.577 | 
+     | tb0/vdp0/FE_RC_1_0/Y                              |  v   | tb0/vdp0/FE_RN_9_0                              | NOR2xp33_ASAP7_75t_R     |  8.600 | 835.244 |  879.177 | 
+     | tb0/vdp0/FE_RC_0_0/A                              |  v   | tb0/vdp0/FE_RN_9_0                              | OR2x2_ASAP7_75t_R        |  0.000 | 835.244 |  879.177 | 
+     | tb0/vdp0/FE_RC_0_0/Y                              |  v   | tb0/fm_wm_value[12]                             | OR2x2_ASAP7_75t_R        | 19.200 | 854.444 |  898.377 | 
+     | tb0/FE_OCPC85_fm_wm_value_12/A                    |  v   | tb0/fm_wm_value[12]                             | INVx1_ASAP7_75t_R        |  0.700 | 855.144 |  899.077 | 
+     | tb0/FE_OCPC85_fm_wm_value_12/Y                    |  ^   | tb0/FE_OCPN5_FE_OFN448_fm_wm_value_12           | INVx1_ASAP7_75t_R        |  7.600 | 862.744 |  906.677 | 
+     | tb0/FE_OCPC86_fm_wm_value_12/A                    |  ^   | tb0/FE_OCPN5_FE_OFN448_fm_wm_value_12           | INVx1_ASAP7_75t_R        |  0.000 | 862.744 |  906.677 | 
+     | tb0/FE_OCPC86_fm_wm_value_12/Y                    |  v   | tb0/FE_OFN448_fm_wm_value_12                    | INVx1_ASAP7_75t_R        | 18.300 | 881.044 |  924.977 | 
+     | tb0/U94/A                                         |  v   | tb0/FE_OFN448_fm_wm_value_12                    | NAND2xp5_ASAP7_75t_R     |  3.800 | 884.844 |  928.777 | 
+     | tb0/U94/Y                                         |  ^   | tb0/n1158                                       | NAND2xp5_ASAP7_75t_R     | 15.900 | 900.744 |  944.677 | 
+     | tb0/U73/B                                         |  ^   | tb0/n1158                                       | OAI21xp5_ASAP7_75t_R     |  0.000 | 900.744 |  944.677 | 
+     | tb0/U73/Y                                         |  v   | tb0/n3412                                       | OAI21xp5_ASAP7_75t_R     | 12.100 | 912.844 |  956.777 | 
+     | tb0/mfwm0_mem_reg_4__0__12_/D                     |  v   | tb0/n3412                                       | ASYNC_DFFHx1_ASAP7_75t_R |  0.100 | 912.944 |  956.877 | 
+     +---------------------------------------------------------------------------------------------------------------------------------------------------------------------+ 
+     Clock Rise Edge                      0.000
+     + Drive Adjustment                   7.100
+     = Beginpoint Arrival Time            7.100
+     Other End Path:
+     +-----------------------------------------------------------------------------------------------------------+ 
+     |               Pin               | Edge |   Net   |           Cell           |  Delay | Arrival | Required | 
+     |                                 |      |         |                          |        |  Time   |   Time   | 
+     |---------------------------------+------+---------+--------------------------+--------+---------+----------| 
+     | clk                             |  ^   | clk     |                          |        |   7.100 |  -36.833 | 
+     | CTS_ccl_a_BUF_clk_G0_L1_2/A     |  ^   | clk     | BUFx10_ASAP7_75t_R       |  3.600 |  10.700 |  -33.233 | 
+     | CTS_ccl_a_BUF_clk_G0_L1_2/Y     |  ^   | CTS_101 | BUFx10_ASAP7_75t_R       | 25.300 |  36.000 |   -7.933 | 
+     | CTS_ccl_a_BUF_clk_G0_L2_18/A    |  ^   | CTS_101 | BUFx2_ASAP7_75t_R        |  0.900 |  36.900 |   -7.033 | 
+     | CTS_ccl_a_BUF_clk_G0_L2_18/Y    |  ^   | CTS_86  | BUFx2_ASAP7_75t_R        | 24.200 |  61.100 |   17.167 | 
+     | tb0/mfwm0_mem_reg_4__0__12_/CLK |  ^   | CTS_86  | ASYNC_DFFHx1_ASAP7_75t_R |  1.200 |  62.300 |   18.367 | 
+     +-----------------------------------------------------------------------------------------------------------+ 

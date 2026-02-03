@@ -1,0 +1,113 @@
+# //  ModelSim SE 2019.1 Jan  1 2019 Linux 4.18.0-372.19.1.el8_6.x86_64
+# //
+# //  Copyright 1991-2019 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  ModelSim SE and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading project APR
+# Compile of gcn.apr.v was successful.
+# Compile of asap7sc7p5t_24_AO_RVT_TT.v was successful.
+# Compile of asap7sc7p5t_24_INVBUF_RVT_TT.v was successful.
+# Compile of asap7sc7p5t_24_OA_RVT_TT.v was successful.
+# Compile of asap7sc7p5t_24_SEQ_RVT_TT.v was successful.
+# Compile of asap7sc7p5t_24_SIMPLE_RVT_TT.v was successful.
+# Compile of GCN_TB_post_syn_apr.sv was successful.
+# 7 compiles, 0 failed with no errors.
+vsim work.GCN_TB -voptargs=+acc
+# vsim work.GCN_TB -voptargs="+acc" 
+# Start time: 05:24:41 on May 01,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: /home/a22969_asu/asap7_rundir/LAB4_1/APR/gcn.apr.v(75733): (vopt-2685) [TFMPC] - Too few port connections for 'U2499'.  Expected 5, found 4.
+# ** Warning: /home/a22969_asu/asap7_rundir/LAB4_1/APR/gcn.apr.v(75733): (vopt-2718) [TFMPC] - Missing connection for port 'CON'.
+# ** Warning: /home/a22969_asu/asap7_rundir/LAB4_1/APR/gcn.apr.v(75749): (vopt-2685) [TFMPC] - Too few port connections for 'U2503'.  Expected 5, found 4.
+# ** Warning: /home/a22969_asu/asap7_rundir/LAB4_1/APR/gcn.apr.v(75749): (vopt-2718) [TFMPC] - Missing connection for port 'CON'.
+# Loading sv_std.std
+# Loading work.GCN_TB(fast)
+# Loading work.GCN(fast)
+# Loading work.AOI21xp5_ASAP7_75t_R(fast)
+# Loading work.AOI31xp33_ASAP7_75t_R(fast)
+# Loading work.INVxp33_ASAP7_75t_R(fast)
+# Loading work.NAND2xp33_ASAP7_75t_R(fast)
+# Loading work.OAI21xp33_ASAP7_75t_R(fast)
+# Loading work.NAND2xp5_ASAP7_75t_R(fast)
+# Loading work.NAND2x1_ASAP7_75t_R(fast)
+# Loading work.BUFx2_ASAP7_75t_R(fast)
+# Loading work.BUFx12f_ASAP7_75t_R(fast)
+# Loading work.BUFx3_ASAP7_75t_R(fast)
+# Loading work.BUFx8_ASAP7_75t_R(fast)
+# Loading work.HB1xp67_ASAP7_75t_R(fast)
+# Loading work.INVx1_ASAP7_75t_R(fast)
+# Loading work.Transformation_Block(fast)
+# Loading work.BUFx4f_ASAP7_75t_R(fast)
+# Loading work.BUFx10_ASAP7_75t_R(fast)
+# Loading work.AO21x1_ASAP7_75t_R(fast)
+# Loading work.OR2x2_ASAP7_75t_R(fast)
+# Loading work.NOR2xp33_ASAP7_75t_R(fast)
+# Loading work.AO22x1_ASAP7_75t_R(fast)
+# Loading work.INVxp67_ASAP7_75t_R(fast)
+# Loading work.OAI21xp5_ASAP7_75t_R(fast)
+# Loading work.OAI22xp5_ASAP7_75t_R(fast)
+# Loading work.BUFx6f_ASAP7_75t_R(fast)
+# Loading work.INVx3_ASAP7_75t_R(fast)
+# Loading work.INVx2_ASAP7_75t_R(fast)
+# Loading work.NAND2x1p5_ASAP7_75t_R(fast)
+# Loading work.INVx4_ASAP7_75t_R(fast)
+# Loading work.INVx8_ASAP7_75t_R(fast)
+# Loading work.BUFx12f_ASAP7_75t_R(fast__1)
+# Loading work.BUFx10_ASAP7_75t_R(fast__1)
+# Loading work.Vector_Dot_Prod(fast)
+# Loading work.MAJIxp5_ASAP7_75t_R(fast)
+# Loading work.XNOR2xp5_ASAP7_75t_R(fast)
+# Loading work.XOR2xp5_ASAP7_75t_R(fast)
+# Loading work.NOR2x1_ASAP7_75t_R(fast)
+# Loading work.AOI21xp33_ASAP7_75t_R(fast)
+# Loading work.OAI21x1_ASAP7_75t_R(fast)
+# Loading work.MAJx2_ASAP7_75t_R(fast)
+# Loading work.XOR2x2_ASAP7_75t_R(fast)
+# Loading work.XOR2x1_ASAP7_75t_R(fast)
+# Loading work.AOI22xp33_ASAP7_75t_R(fast)
+# Loading work.NOR3xp33_ASAP7_75t_R(fast)
+# Loading work.AO22x2_ASAP7_75t_R(fast)
+# Loading work.AO31x2_ASAP7_75t_R(fast)
+# Loading work.OAI22xp33_ASAP7_75t_R(fast)
+# Loading work.NAND3xp33_ASAP7_75t_R(fast)
+# Loading work.OAI22x1_ASAP7_75t_R(fast)
+# Loading work.OAI322xp33_ASAP7_75t_R(fast)
+# Loading work.NOR2xp67_ASAP7_75t_R(fast)
+# Loading work.AND2x2_ASAP7_75t_R(fast)
+# Loading work.NAND3x1_ASAP7_75t_R(fast)
+# Loading work.AOI32xp33_ASAP7_75t_R(fast)
+# Loading work.OR2x6_ASAP7_75t_R(fast)
+# Loading work.FAx1_ASAP7_75t_R(fast)
+# Loading work.XNOR2x2_ASAP7_75t_R(fast)
+# Loading work.O2A1O1Ixp5_ASAP7_75t_R(fast)
+# Loading work.NOR2x1p5_ASAP7_75t_R(fast)
+# Loading work.ASYNC_DFFHx1_ASAP7_75t_R(fast)
+# Loading work.DHLx1_ASAP7_75t_R(fast)
+# Loading work.OA21x2_ASAP7_75t_R(fast)
+# Loading work.TIELOx1_ASAP7_75t_R(fast)
+# Loading work.A2O1A1Ixp33_ASAP7_75t_R(fast)
+# Loading work.O2A1O1Ixp33_ASAP7_75t_R(fast)
+add wave -position insertpoint sim:/GCN_TB/*
+run -all
+# max_addi_answer[0]     DUT: 0       GOLD: 0 
+# max_addi_answer[1]     DUT: 0       GOLD: 0 
+# max_addi_answer[2]     DUT: 0       GOLD: 0 
+# max_addi_answer[3]     DUT: 1       GOLD: 1 
+# max_addi_answer[4]     DUT: 1       GOLD: 1 
+# max_addi_answer[5]     DUT: 2       GOLD: 2 
+# 
+# 
+# ** Note: $finish    : /home/a22969_asu/asap7_rundir/LAB4_1/synthesis/GCN_TB_post_syn_apr.sv(123)
+#    Time: 72452 ps  Iteration: 0  Instance: /GCN_TB
+# 1
+# Break in Module GCN_TB at /home/a22969_asu/asap7_rundir/LAB4_1/synthesis/GCN_TB_post_syn_apr.sv line 123
+# End time: 05:27:31 on May 01,2025, Elapsed time: 0:02:50
+# Errors: 0, Warnings: 4
